@@ -1,0 +1,37 @@
+# Environment variables
+electron/.env
+
+# Python virtual environment
+python/.venv/
+
+# Node modules
+node_modules/
+electron/node_modules/
+
+# Coverage directory
+coverage/
+electron/coverage/
+
+# Build output
+build/
+dist/
+electron/dist/
+electron/build/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.Spotlight-V100
+.Trashes
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,91 @@
+{
+    "name": "uspto-search-checker",
+    "version": "1.0.0",
+    "description": "USPTO Search Checker Electron App with React and MUI",
+    "type": "module",
+    "main": "electron/main.js",
+    "scripts": {
+        "start": "concurrently \"npm run react-dev\" \"npm run electron-start\"",
+        "react-dev": "cd electron && npm start",
+        "electron-start": "electron .",
+        "package": "electron-builder --dir",
+        "dist": "electron-builder",
+        "build": "npm run react-build && npm run dist",
+        "react-build": "cd electron && npm run build"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.24.0",
+        "@babel/preset-env": "^7.24.0",
+        "@babel/preset-react": "^7.23.3",
+        "babel-loader": "^9.1.3",
+        "browserify-zlib": "^0.2.0",
+        "buffer": "^6.0.3",
+        "concurrently": "^8.2.2",
+        "crypto-browserify": "^3.12.1",
+        "css-loader": "^6.10.0",
+        "electron": "^28.2.0",
+        "electron-builder": "^24.13.3",
+        "electron-context-menu": "^4.0.5",
+        "html-webpack-plugin": "^5.6.0",
+        "https-browserify": "^1.0.0",
+        "process": "^0.11.10",
+        "stream-browserify": "^3.0.0",
+        "stream-http": "^3.2.0",
+        "style-loader": "^3.3.4",
+        "url": "^0.11.4",
+        "util": "^0.12.5",
+        "webpack": "^5.90.3",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.2",
+        "xlsx": "^0.18.5"
+    },
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.0.0",
+        "@aws-sdk/lib-dynamodb": "^3.0.0",
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@google/generative-ai": "^0.24.0",
+        "@mui/icons-material": "^5.17.1",
+        "@mui/material": "^5.17.1",
+        "aws-sdk": "^2.1692.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "build": {
+        "appId": "com.your-domain.uspto-search-checker",
+        "productName": "USPTO Search Checker",
+        "copyright": "Copyright © 2025 Your Name",
+        "asar": true,
+        "directories": {
+            "output": "dist",
+            "buildResources": "assets"
+        },
+        "files": [
+            "electron/**/*",
+            "python/**/*",
+            "css/**/*",
+            "assets/**/*",
+            "index.html"
+        ],
+        "win": {
+            "target": [
+                "nsis",
+                "portable"
+            ],
+            "icon": "assets/app-icon.png"
+        },
+        "nsis": {
+            "installerIcon": "assets/installer-icon.ico",
+            "uninstallerIcon": "assets/uninstaller-icon.ico",
+            "uninstallDisplayName": "USPTO Search Checker Uninstaller",
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true,
+            "perMachine": false
+        },
+        "portable": {
+            "portableCompressor": "default"
+        }
+    }
+}
