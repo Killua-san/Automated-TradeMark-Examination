@@ -14,7 +14,7 @@ The primary goal of this tool is to streamline and enhance the efficiency of tra
 *   **React:** For building the user interface.
 *   **Python:** Used for backend scripting, likely for search operations (USPTO, MGS) and AI-powered suggestions.
 *   **AWS Cognito:** For user authentication and management.
-*   **AWS API Gateway & Lambda (implied):** For backend API interactions, likely connecting to services like DynamoDB for storing match data.
+*   **AWS API Gateway & Lambda (implied):** For backend API interactions, connecting to services like DynamoDB for storing match data.
 *   **Gemini AI:** Integrated for formatting input and potentially providing other AI-driven insights.
 
 ## Features (Current & Planned)
