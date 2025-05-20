@@ -12,7 +12,7 @@ The primary goal of this tool is to streamline and enhance the efficiency of tra
 
 *   **Electron:** For building the cross-platform desktop application.
 *   **React:** For building the user interface.
-*   **Python:** Used for backend scripting, likely for search operations (USPTO, MGS) and AI-powered suggestions.
+*   **Python:** Used for backend scripting, for search operations (USPTO, MGS) and AI-powered suggestions.
 *   **AWS Cognito:** For user authentication and management.
 *   **AWS API Gateway & Lambda (implied):** For backend API interactions, connecting to services like DynamoDB for storing match data.
 *   **Gemini AI:** Integrated for formatting input and potentially providing other AI-driven insights.
@@ -28,7 +28,7 @@ The primary goal of this tool is to streamline and enhance the efficiency of tra
     *   Input formatting using Gemini AI.
     *   AI-driven suggestions for search terms.
     *   Vagueness checks for trademark terms.
-*   **Data Storage:** Store and retrieve search match data (likely via DynamoDB through an API).
+*   **Data Storage:** Store and retrieve search match data (via DynamoDB).
 *   **Export Functionality:** Export search results (e.g., vague results to Word documents).
 *   **Auto-Updater:** Keeps the application up-to-date.
 
